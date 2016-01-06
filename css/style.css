@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.outer {
+    display: table;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .7);
+}
+img {
+    width: 100px;
+}
+
+.cover {
+    height: 80%;
+    width: 100%;
+    background-image: url(../imgs/background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.main h1 {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.main p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #b7b7b7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.signup {
+    margin: 10px auto;
+    background-color: #E74C3C;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #333;
+    padding: 10px 25px;
+    width: 100px;
+    text-decoration: none;
+}
+
+.about {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.about h1 {
+    color: #333;
+}
+.about p {
+    color: #6C7A89;
+    margin: 25px auto;
+    line-height: 1.6em;
+    width: 500px;
+}
+.coversecond {
+    height: 300px;
+    width: 100%;
+    background-image: url(../imgs/background.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
