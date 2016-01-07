@@ -88,3 +88,13 @@ a {
     background-position: top;
     background-attachment: fixed;
 }
+
+@media (max-width: 40em) {
+    p {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .about p {
+        width: 90%;
+    }
+}
