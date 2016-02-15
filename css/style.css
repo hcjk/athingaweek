@@ -55,6 +55,10 @@ a {
     text-decoration: none;
 }
 
+.about a {
+    color: #aaa;
+}
+
 .signup {
     margin: 10px auto;
     background-color: #E74C3C;
