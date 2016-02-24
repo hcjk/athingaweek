@@ -61,6 +61,10 @@ a {
     color: #aaa;
 }
 
+.about a:hover {
+    color: #333;
+}
+
 .signup {
     margin: 10px auto;
     background-color: #E74C3C;
@@ -86,7 +90,7 @@ p {
 }
 
 .about p {
-    color: #6C7A89;
+    color: #777;
     margin: 25px auto;
     width: 500px;
 }
