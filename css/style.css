@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    transition: all .3s ease;
 }
 
 html,
@@ -26,6 +27,7 @@ body {
     text-align: center;
     background-color: rgba(0, 0, 0, .7);
 }
+
 img {
     width: 100px;
 }
@@ -78,12 +80,17 @@ a {
 .about h1 {
     color: #333;
 }
+
+p {
+    line-height: 1.6em;
+}
+
 .about p {
     color: #6C7A89;
     margin: 25px auto;
-    line-height: 1.6em;
     width: 500px;
 }
+
 .coversecond {
     height: 300px;
     width: 100%;
@@ -91,6 +98,23 @@ a {
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+}
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #c7c7cc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
 }
 
 @media (max-width: 40em) {
