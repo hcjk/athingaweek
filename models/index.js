@@ -7,4 +7,5 @@ mongoose.connect(process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb
 
 module.exports = {
   User: require('./User')(mongoose),
+  Project: require('./Project')(mongoose)
 }

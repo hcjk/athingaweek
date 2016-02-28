@@ -26,8 +26,8 @@ class Application extends React.Component {
           <link rel="stylesheet" type="text/css" href="/css/application.css" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta name="description" />
-          <meta charset="UTF-8" />
-          <title>Appski Broski</title>
+          <meta charSet="UTF-8" />
+          <title>Show A Thing A Week</title>
         </head>
         <body>
           {this.props.children}

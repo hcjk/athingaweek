@@ -22,6 +22,7 @@ module.exports = function(mongoose) {
       required: true
     },
     created_at: {type: Date, default: new Date()},
+    projects: [{type: mongoose.Schema.Types.ObjectId, ref: 'Project'}]
   });
 
 
