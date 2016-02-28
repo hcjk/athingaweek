@@ -19,7 +19,8 @@
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "request": "^2.69.0",
-    "vision": "^4.0.1"
+    "vision": "^4.0.1",
+    "yar": "^7.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

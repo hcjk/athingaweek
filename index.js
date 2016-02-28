@@ -31,6 +31,25 @@ server.register(require('vision'), (err) => {
   });
 });
 
+// Authentication before requests go through
+const auth = require('./auth')(server);
+
+// Setup flash rendering to the frontend
+const flashes = require('./flashes')(server);
+
+// For flash messages, accessible through req.session.flash('type', 'message')
+var options = {
+    storeBlank: false,
+    cookieOptions: {
+        password: 'passwordpasswordpasswordpasswordpasswordpasswordpassword',
+        isSecure: false
+    }
+};
+
+server.register({
+    register: require('yar'),
+    options: options
+}, function (err) { });
 
 // Configure routes
 var routes = require('./routes')(server);

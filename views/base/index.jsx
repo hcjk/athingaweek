@@ -10,6 +10,7 @@ class Index extends React.Component {
     return (
       <Layout {...this.props}>
         Hello World
+        {this.props.current_user.name}
       </Layout>
     );
   }
