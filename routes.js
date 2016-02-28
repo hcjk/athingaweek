@@ -5,6 +5,10 @@ module.exports = function(server) {
   // Base routes
   server.route({method: 'GET', path: '/', handler: c.Base.index});
 
+  // Session routes
+  server.route({method: 'GET', path: '/login', handler: c.Session.index});
+  server.route({method: 'GET', path: '/login_confirm', handler: c.Session.confirm});
+
   // Static files
   server.route({
     method: 'GET',
