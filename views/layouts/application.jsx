@@ -1,5 +1,7 @@
 'use strict';
 const React = require('react');
+const Navigation = require('../shared/navigation');
+const Flashes = require('../shared/flashes');
 
 class Application extends React.Component {
   constructor(props) {
@@ -30,6 +32,8 @@ class Application extends React.Component {
           <title>Show A Thing A Week</title>
         </head>
         <body>
+          <Navigation {...this.props} />
+          <Flashes {...this.props} />
           {this.props.children}
           {this.renderJSScript()}
         </body>

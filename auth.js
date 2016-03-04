@@ -13,6 +13,8 @@ module.exports = function(server) {
       res.source.context = {};
     }
 
+    if (!user) return reply.continue();
+
     // Update the user saved in session on every request
     return User.findOne({_id: user._id}, function(err, new_user) {
       res.source.context.current_user = new_user;

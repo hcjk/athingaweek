@@ -9,6 +9,11 @@ module.exports = function(server) {
   server.route({method: 'GET', path: '/login', handler: c.Session.index});
   server.route({method: 'GET', path: '/login_confirm', handler: c.Session.confirm});
 
+  // Project routes
+  server.route({method: 'GET', path: '/projects', handler: c.Project.index});
+  server.route({method: 'POST', path: '/projects', handler: c.Project.create});
+  server.route({method: 'GET', path: '/projects/new', handler: c.Project.new});
+
   // Static files
   server.route({
     method: 'GET',
