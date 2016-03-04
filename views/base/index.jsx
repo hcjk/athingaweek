@@ -7,10 +7,19 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
   }
+  renderProjects() {
+    const projects = this.props.projects.map(((project) => {
+      console.log(project);
+      return <Project {...project} />
+    }));
+    console.log(projects);
+    return projects;
+  }
   render() {
     return (
       <Layout {...this.props}>
-        Hello World
+        <h1>Projects</h1>
+        {this.renderProjects()}
       </Layout>
     );
   }

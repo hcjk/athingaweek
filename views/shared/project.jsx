@@ -6,6 +6,7 @@ class Project extends React.Component {
     super(props);
   }
   render() {
+    console.log(this.props);
     return (
       <div className='project'>
         <div className='project-name'>{this.props.name}</div>
@@ -13,3 +14,5 @@ class Project extends React.Component {
     )
   }
 }
+
+module.exports = Project;

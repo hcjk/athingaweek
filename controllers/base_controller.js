@@ -1,5 +1,10 @@
+const m = require('../models');
+const Project = m.Project;
+
 module.exports = {
   index: function(req, res) {
-    res.view('base/index');
+    Project.find().populate('user').exec(function(err, projects) {
+      res.view('base/index', {projects: projects});  
+    });
   }
 }
