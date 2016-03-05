@@ -1,0 +1,23 @@
+@import (reference) "variables";
+@import (reference) "mixins";
+
+a {
+  color: @button-color;
+  text-decoration: none;
+
+  &.btn {
+    color: white;
+    background-color: @button-color;
+    margin: 10px auto;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #333;
+    padding: 10px 25px;
+    min-width: 100px;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: @header-color;
+}

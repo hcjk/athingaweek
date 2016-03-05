@@ -8,18 +8,23 @@ class Navigation extends React.Component {
   renderButtons() {
     if (this.props.current_user) {
       return (
-        <a href='/projects/new' className='button'>New</a>
+        <a href='/projects/new' className='btn'>New</a>
       )
     }
     return (
-      <a href='/login' className='button'>Login w/ Slack</a>
+      <a href='/login' className='btn'>Login w/ Slack</a>
     )
   }
   render() {
     return (
       <nav>
-        <a href="/">A Thing A Week</a>
-        {this.renderButtons()}
+        <div className='wrapper'>
+          <a href='/' className='logo'>
+            <img src='/images/logo.jpg' />
+            A Thing A Week
+          </a>
+          {this.renderButtons()}
+        </div>
       </nav>
     )
   }

@@ -1,0 +1,163 @@
+@import (reference) "variables";
+@import (reference) "mixins";
+
+form {
+}
+
+.input {
+  width: 100%;
+  max-width: 100%;
+}
+.input-group {
+  overflow: hidden;
+}
+
+input, label, textarea, select {
+  display: block;
+  .font-size(1.8);
+}
+
+input[type='text'], input[type='email'], input[type='url'], input[type='password'],
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 4rem;
+}
+
+.checkbox {
+  input[type='checkbox']{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 1.5rem;
+  }
+}
+
+textarea {
+  min-height: 200px;
+}
+
+.input--half {
+  display: inline-block;
+  width: 50%;
+  margin: 0 -2px;
+}
+
+.date-selectors {
+  select {
+    display: inline-block;
+    margin: 0 5px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
+
+.input__name, .input__email {
+  width: 100%;
+  float: none;
+}
+
+
+label {
+  line-height: 3rem;
+  margin: 2rem 0 0.5rem 0;
+}
+
+input, textarea, select {
+  background-color: @input-background-color;
+  border-radius: 2px;
+  border: 1px solid darken(@input-background-color, 1);
+  padding: 1rem;
+  color: @font-color;
+  &:focus {
+    outline: 1px solid darken(@input-background-color, 2);
+    box-shadow: none;
+    background-color: darken(@input-background-color, 1);
+  }
+}
+
+button, input[type='submit']{
+  background-color: @button-color;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  margin: 1rem 0;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+  &.small {
+    margin: 1rem 0rem;
+    padding: 1rem;
+  }
+
+  &:hover {
+    background-color: darken(@button-color, 10);
+  }
+  &:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+
+  &.error {
+    background-color: @error-color;
+  }
+}
+
+.input-error {
+  background-color: #DF4848;
+  padding: 1rem;
+  color: #fff;
+  font-size: 14px;
+}
+
+formgroup {
+  h2 {
+    padding-bottom: 15px;
+    cursor: pointer;
+
+    i {
+      float: right;
+    }
+  }
+  .form_inputs {
+    display: none;
+  }
+
+  &.active {
+    h2 {
+      border-bottom: 1px solid @background-color;
+
+      i {
+        display: none;
+      }
+    }
+
+    .form_inputs {
+      display: block;
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  color: darken(#172C38, 5);
+}
+:-moz-placeholder { /* older Firefox*/
+  color: darken(#172C38, 5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: darken(#172C38, 5);
+}
+:-ms-input-placeholder {
+  color: darken(#172C38, 5);
+}

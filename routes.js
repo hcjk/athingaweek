@@ -24,6 +24,13 @@ module.exports = function(server) {
   });
   server.route({
       method: 'GET',
+      path: '/images/{file}',
+      handler: function (request, reply) {
+          reply.file(`./public/images/${request.params.file}`);
+      }
+  });
+  server.route({
+      method: 'GET',
       path: '/js/{file}.js',
       handler: function (request, reply) {
           reply.file(`./public/js/${request.params.file}.js`);
