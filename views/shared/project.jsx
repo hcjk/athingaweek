@@ -15,7 +15,7 @@ class Project extends React.Component {
           <div className='project-user-name'>{this.props.project.user.name}</div>
         </div>
         <a href={this.props.project.url} target='_blank' className='project-link'>
-          <i className='fa fa-2x fa-external-link'></i>
+          <i className='fa fa-1x fa-external-link'></i>
         </a>
       </div>
     )
