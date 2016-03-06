@@ -12,7 +12,7 @@ class Navigation extends React.Component {
       )
     }
     return (
-      <a href='/login' className='btn'>Login w/ Slack</a>
+      <a href='/login' className='btn'><i className="fa fa-slack"></i> Login</a>
     )
   }
   render() {
