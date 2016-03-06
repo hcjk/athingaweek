@@ -1,0 +1,46 @@
+@import (reference) "variables";
+
+.project {
+  padding: 15px;
+
+  &:hover {
+    background-color: @input-background-color;
+  }
+
+  .project-name {
+    color: @header-color;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .project-user {
+    margin-top: 5px;
+
+    .project-user-img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+
+    .project-user-name {
+      margin: 0 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .project-link {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: @header-color;
+
+    transition: all 0.3s;
+
+    &:hover {
+      color: @button-color;
+    }
+  }
+}
