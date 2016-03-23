@@ -4,7 +4,7 @@ const User = m.User;
 
 module.exports = {
   index: function(req, res) {
-    res.redirect(`https://slack.com/oauth/authorize?client_id=${process.env["SLACK_CLIENT"]}&scope=chat:write:user+users:read&team=T0HQ9H9DG&state=success`);
+    res.redirect(`https://slack.com/oauth/authorize?client_id=${process.env["SLACK_CLIENT"]}&scope=chat:write:user+users:read&team=T0HQ9H9DG&state=success&redirect_uri=${process.env["SLACK_REDIRECT_URI"]}`);
   },
   confirm: function(req, res) {
     r(`https://slack.com/api/oauth.access?client_id=${process.env["SLACK_CLIENT"]}&client_secret=${process.env["SLACK_SECRET"]}&code=${req.query.code}`, function(err, response, body) {
