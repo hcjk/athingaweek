@@ -4,7 +4,7 @@ var Path = require('path');
 var Hapi = require('hapi');
 
 // For .env files, please don't load your .env into package control
-require('dotenv').config();
+require('dotenv').config({silent: true});
 
 
 var server = new Hapi.Server();
