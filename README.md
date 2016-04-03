@@ -1,5 +1,5 @@
 # A Thing A Week
 
-A motivated Slack group focused on creating A Thing A Week. Join below!
+Build a thing a week to improve your skills.
 
-[![Slack Status](http://slack.athingaweek.com/badge.svg)](http://slack.athingaweek.com)
+:zap:
